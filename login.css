@@ -1,0 +1,146 @@
+* {
+      box-sizing: border-box;
+      font-family: poppins, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+
+  
+
+    
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* background video only around login box */
+    #bg-video {
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+   
+
+
+    /* area outside login box will show video */
+    .outer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* login box — video will NOT be visible inside */
+    .login-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+      color: rgb(61, 61, 61);
+      position: relative;
+      z-index: 2; 
+      
+      
+      
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: rgba(103, 98, 98, 0.2);
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      
+      
+    }
+
+    input::placeholder {
+      color: #4a4848;
+    }
+    input:hover {
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
+      /* font-size: 12px; */
+    }
+    input:focus {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #0e5c10;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    a {
+      color: #191919;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+
+   .me {
+  font-family: "Momo Signature", cursive;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(255, 255, 255, 0.75);
+  width: 0;
+  animation: typing 5s ease forwards, blink 0.75s step-end infinite;
+}
+
+/* Smooth typing (continuous flow instead of step jumps) */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Cursor blink */
+@keyframes blink {
+  50% { border-color: transparent; }
+}

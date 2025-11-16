@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading...</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="finalbg.mp4" type="video/mp4">
+  </video>
+
+  <div class="outer">
+    <div class="loader-box">
+      <h2 class="text">Fetching your chats...</h2>
+      <div class="loader"></div>
+    </div>
+  </div>
+
+  <script>
+    // Redirect to chat page after 3 seconds
+    setTimeout(() => {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = 'chat.html';
+      }, 1000);
+    }, 3000);
+  </script>
+</body>
+</html>
