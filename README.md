@@ -5,3 +5,4 @@ Added background video on login page
 Added loading animation on popup.html
 Working pdf and photos on the chat
 Added color grading on webpages
+Beautiful Hover buttons on menu section
