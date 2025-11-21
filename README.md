@@ -6,3 +6,4 @@ Added loading animation on popup.html
 Working pdf and photos on the chat
 Added color grading on webpages
 Beautiful Hover buttons on menu section
+Change color on hover button on menu section
